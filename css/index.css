@@ -1,14 +1,51 @@
-#menu {
-	text-align: center;
+#wrapper {
+	width: 900px;
+	display-list-style
 }
-/*to remove text-align after testing for functionality.*/
-#table {
+
+#inventory {
+	width: 400px;
+	float: left;
+}
+
+#left {
+	width: 140px;
+	float: left;
+}
+
+#right {
+	width: 140px;
+	float: right;
+}
+
+#tax {
+	clear: both;
+}
+
+#total {
+	clear: both;
+}
+
+input[type=text]
+{
+    background-color: #BFBDBD;
+    border:solid 1px #BFBDBD;
+    color: #979797;
+    height: 28px;
+    padding-left:10px;
+    width: 191px;
+    box-shadow: 2px 2px 0 #828181 inset;
+}
+
+#menu {
 	width: 450px;
 	height: 450px;
 	border: solid black 1px;
 	margin-top: 8%;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center; /*to remove text-align after testing for functionality.*/
+	float: right;
 }
 
 .row {
