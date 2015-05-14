@@ -1,0 +1,25 @@
+#menu {
+	text-align: center;
+}
+/*to remove text-align after testing for functionality.*/
+#table {
+	width: 450px;
+	height: 450px;
+	border: solid black 1px;
+	margin-top: 8%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	height: 148px;
+	width: 450px;
+	border: solid black 1px;
+}
+
+.cell {
+	width: 148px;
+	height: 148px;
+	border: solid black 1px;
+	float: left;
+}
