@@ -4,9 +4,62 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Welcome, How May I Take Your Order?</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="index.js"></script>
 </head>
-<body>
-	
+<body> 
+
+	<div id="wrapper">
+		<img src="images/ch.jpg" alt="erin">
+
+		<div id="inventory">
+			<div id="items">
+				<ul id="itemname">
+				</ul>
+			</div>
+			<ul id="tip">
+					<li><strong>Tip:</strong></li>
+					<li id="tipDisplay"></li>
+				</ul>
+
+				<ul id="tax">
+					<li><strong>Tax:</strong></li>
+					<li id="taxDisplay"></li>
+				</ul>
+
+				<ul id="total">
+					<li><strong>Total:</strong></li>
+					<li id="totalDisplay"></li>
+				</ul>
+			</div>
+	<!-- AFTER PUTTING IMAGES, USE THE P FOR PRICES AND PARSE. -->
+		<div id="menu">
+			<div class="row">
+				<div class="cell">
+					<input id="hamburger" type="button" style="background: url('images/hb.jpg')" /></div>
+				<div class="cell">
+					<input id="cheeseburger" type="button" style="background: url('images/cb.jpg')" /></div>
+				<div class="cell">
+				<input id="baconcheese" type="button" style="background: url('images/bcb.png')" /></div>	
+			</div>
+
+			<div class="row">
+				<div id="fries" class="cell">
+					<input id="fries" type="button" style="background: url('images/fries.jpg')" /></div>
+				<div class="cell">
+					<input id="onionrings" type="button" style="background: url('images/onion.png')" /></div>
+				<div class="cell">
+					<input id="drink" type="button" style="background: url('images/drinks.jpg')" /></div>
+			</div>
+
+			<div class="row">
+				<div class="cell">
+					<input id="combo1" type="button" style="background: url('images/combo1.jpg')" /></div>
+				<div class="cell">
+					<input id="combo2" type="button" style="background: url('images/combo2.jpg')" /></div>
+				<div class="cell">
+					<input id="combo3" type="button" style="background: url('images/combo3.jpg')" /></div>
+			</div>
+		</div>
 </body>
 </html>
