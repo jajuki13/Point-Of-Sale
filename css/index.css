@@ -1,36 +1,52 @@
+body {
+	background-image: url('../images/bg.png');
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#tip li {
+	display: inline;
+}
+
+#tax li {
+   display: inline;
+}
+
+#total li {
+   display: inline;
+}
+
 #wrapper {
 	background-color: #E5DED8;
-	width: 1024px;
-	height: 768px;
-	margin: 0 auto;
-	list-style-type: none;
-
+	width: 1100px;
+	height: 800px;
+	margin: 3% auto;
 }
+
+img {
+	display: inline;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 200px;
+   padding: 0 auto;
+   float: left;
+}
+
 
 #inventory {
-	width: 200px;
-	float: left;
+   background-color: white;
+   border: gray 1px;
+   width: 250px;
+   height: 500px;
+   float: left;
 }
 
-#left {
-	width: 90px;
-	float: left;
-}
-
-#right {
-	width: 90px;
-	float: left;
-}
-
-#tax {
-	clear: both;
-}
-
-#total {
-	clear: both;
-}
-
-input[type=text]
+/*input[type=text]
 {
     background-color: #BFBDBD;
     border:solid 1px #BFBDBD;
@@ -40,38 +56,129 @@ input[type=text]
     width: 180px;
     box-shadow: 2px 2px 0 #828181 inset;
 }
-
-img {
-	display: block;
-   max-width: 100%;
-   max-height: 100%;
-   width:300px;
-   height:300px;
-   margin:0 auto;
-   padding:0 auto;
-   float: left;
-}
+*/
 
 #menu {
-	width: 450px;
-	height: 450px;
-	border: solid black 1px;
-	margin-top: 8%;
-	margin-left: 25px;
-	margin-right: auto;
+	width: 600px;
+	height: 600px;
+	border: solid gray 1px;
+	margin-top: 2%;
+	margin-left: 20px;
+	margin-right: 20px;
 	text-align: center; /*to remove text-align after testing for functionality.*/
-	float: left;
+	float: right;
 }
 
 .row {
-	height: 148px;
-	width: 450px;
-	border: solid black 1px;
+	height: 198px;
+	width: 600px;
+	border-top: solid gray 1px;
+	border-bottom: solid gray 1px;
 }
 
 .cell {
-	width: 148px;
-	height: 148px;
-	border: solid black 1px;
+	width: 200px;
+	height: 198px;
+	/*border-left: solid black 1px;
+	border-right: solid black 1px;*/
 	float: left;
+}
+
+#hamburger {
+   /*background-image: url('../images/hb.jpg');*/
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 198px;
+   margin: 0 auto;
+   padding: 0 auto;
+}
+
+#cheeseburger {
+   /*background-image: url('../images/cb.jpg');*/
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 198px;
+   margin: 0 auto;
+   padding: 0 auto;
+}
+
+#baconcheese {
+   /*background-image: url('../images/bcb.png');*/
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 198px;
+   margin: 0 auto;
+   padding: 0 auto;
+}
+
+#fries {
+  /* background-image: url('../images/fries.jpg');*/
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 198px;
+   margin: 0 auto;
+   padding: 0 auto;
+}
+
+#onionrings {
+   /*background-image: url('../images/onion.png');*/
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 198px;
+   margin: 0 auto;
+   padding: 0 auto;
+}
+
+#drink {
+   /*background-image: url('../images/drinks.jpg');*/
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 198px;
+   margin: 0 auto;
+   padding: 0 auto;
+}
+
+#combo1 {
+   /*background-image: url('../images/combo1.jpg');*/
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 198px;
+   margin: 0 auto;
+   padding: 0 auto;
+}
+
+#combo2 {
+   /*background-image: url('../images/combo2.jpg');*/
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 198px;
+   margin: 0 auto;
+   padding: 0 auto;
+}
+
+#combo3 {
+   /*background-image: url('../images/combo3.jpg');*/
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   width: 200px;
+   height: 198px;
+   margin: 0 auto;
+   padding: 0 auto;
 }
