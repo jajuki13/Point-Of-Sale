@@ -7,11 +7,8 @@ var picOfDrink = document.getElementById('drink');
 var picOfComboOne = document.getElementById('combo1');
 var picOfComboTwo = document.getElementById('combo2');
 var picOfComboThree = document.getElementById('combo3');
-var tipById = document.getElementById('tip');
 var tipToDisplay = document.getElementById('tipDisplay');
-var taxById = document.getElementById('tax');
 var taxToDisplay = document.getElementById('taxDisplay');
-var totalById = document.getElementById('total');
 var totalToDisplay = document.getElementById('totalDisplay');
 var itemsOnReceipt = document.getElementById('itemname');
 var placement = document.createElement('li');
@@ -24,20 +21,21 @@ var Product = function Product(name, price) {
 	this.price = price;
 }
 
-var hamburger = new Product('hamburger', 1.25);
-var cheeseBurger = new Product('cheeseburger', 1.75);
-var baconCheese = new Product('baconCB', 2.25);
-var fries = new Product('fries', 1.75);
+var hamburger = new Product('hamburger', 1);
+var cheeseBurger = new Product('cheeseburger', 2);
+var baconCheese = new Product('baconCB', 2);
+var fries = new Product('fries', 1);
 var onionRings = new Product('onion-rings', 2);
-var drink = new Product('coke', 2.25);
-var comboOne = new Product('combo-one', 5.21);
-var comboTwo = new Product('combo-two', 5.98);
-var comboThree = new Product('combo-three', 6.98);
+var drink = new Product('coke', 2);
+var comboOne = new Product('combo-one', 5);
+var comboTwo = new Product('combo-two', 6);
+var comboThree = new Product('combo-three', 7);
 
 Product.prototype.billedItems = function() {
   this.menuItem = placement;
   this.menuItem.textContent = this.name + " ==> " + this.price;
   itemsOnReceipt.appendChild(this.menuItem);
+  itemsOnReceipt.scrollTop = 999999;
 };
 
 Product.prototype.logic = function() {
@@ -116,12 +114,12 @@ var showComboThree = function() {
 	comboThree.display();
 };
 
-picOfHamburger.addEventListener('onClick', showHamburger);
-picOfCheese.addEventListener('onClick', showCheese);
-picOfBacon.addEventListener('onClick', showBacon);
-picOfFries.addEventListener('onClick', showFries);
-picOfOnion.addEventListener('onClick', showOnion);
-picOfDrink.addEventListener('onClick', showDrink);
-picOfComboOne.addEventListener('onClick', showComboOne);
-picOfComboTwo.addEventListener('onClick', showComboTwo);
-picOfComboThree.addEventListener('onClick', showComboThree);
+picOfHamburger.addEventListener('click', showHamburger());
+picOfCheese.addEventListener('click', showCheese);
+picOfBacon.addEventListener('click', showBacon);
+picOfFries.addEventListener('click', showFries);
+picOfOnion.addEventListener('click', showOnion);
+picOfDrink.addEventListener('click', showDrink);
+picOfComboOne.addEventListener('click', showComboOne);
+picOfComboTwo.addEventListener('click', showComboTwo);
+picOfComboThree.addEventListener('click', showComboThree);
