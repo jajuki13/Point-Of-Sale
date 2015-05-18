@@ -1,63 +1,63 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Welcome, How May I Take Your Order?</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="index.js"></script>
+</head>
+<body> 
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Point-of-sale : &quot;Chica Hamburgersa&quot;">
+	<div id="wrapper">
+		<img src="images/ch.jpg" alt="erin">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<div id="inventory">
+				<ul id="itemname">
+				</ul>
+			<ul id="tip">
+					<li><strong>Tip:</strong></li>
+					<li id="tipDisplay"></li>
+				</ul>
 
-    <title>Point-of-sale</title>
-  </head>
+				<ul id="tax">
+					<li><strong>Tax:</strong></li>
+					<li id="taxDisplay"></li>
+				</ul>
 
-  <body>
+				<ul id="total">
+					<li><strong>Total:</strong></li>
+					<li id="totalDisplay"></li>
+				</ul>
+			</div>
+	<!-- AFTER PUTTING IMAGES, USE THE P FOR PRICES AND PARSE. -->
+		<div id="menu">
+			<div class="row">
+				<div class="cell">
+					<input id="hamburger" type="button" style="background: url('images/hb.jpg')" /></div>
+				<div class="cell">
+					<input id="cheeseburger" type="button" style="background: url('images/cb.jpg')" /></div>
+				<div class="cell">
+				<input id="baconcheese" type="button" style="background: url('images/bcb.png')" /></div>	
+			</div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jajuki13/Point-Of-Sale">View on GitHub</a>
+			<div class="row">
+				<div id="fries" class="cell">
+					<input id="fries" type="button" style="background: url('images/fries.jpg')" /></div>
+				<div class="cell">
+					<input id="onionrings" type="button" style="background: url('images/onion.png')" /></div>
+				<div class="cell">
+					<input id="drink" type="button" style="background: url('images/drinks.jpg')" /></div>
+			</div>
 
-          <h1 id="project_title">Point-of-sale</h1>
-          <h2 id="project_tagline">&quot;Chica Hamburgersa&quot;</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/jajuki13/Point-Of-Sale/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/jajuki13/Point-Of-Sale/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a id="pos-system-for-kimmys" class="anchor" href="#pos-system-for-kimmys" aria-hidden="true"><span class="octicon octicon-link"></span></a>PoS system for Kimmy's!</h1>
-
-<h1></h1>
-
-<p>by James</p>
-
-<h2>
-<a id="to-use" class="anchor" href="#to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>To use</h2>
-
-<ol>
-<li>Fork over the repo, and type  within the directory of the repo, the period included.</li>
-<li>Open the HTML file in browser by dragging the file to the browser or via double click, open in browser option.</li>
-<li>Select the item and click on it. Everything else should follow through.</li>
-</ol>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Point-of-sale maintained by <a href="https://github.com/jajuki13">jajuki13</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+			<div class="row">
+				<div class="cell">
+					<input id="combo1" type="button" style="background: url('images/combo1.jpg')" /></div>
+				<div class="cell">
+					<input id="combo2" type="button" style="background: url('images/combo2.jpg')" /></div>
+				<div class="cell">
+					<input id="combo3" type="button" style="background: url('images/combo3.jpg')" /></div>
+			</div>
+		</div>
+</body>
 </html>
